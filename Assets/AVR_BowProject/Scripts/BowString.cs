@@ -23,6 +23,8 @@ public class BowString : MonoBehaviour
         {
             linePoints[1] = transform.InverseTransformPoint(midPosition.Value);
         }
+
+        // ^1 Gets last position of array
         linePoints[^1] = endpoint_2.localPosition;
 
         lineRenderer.positionCount = linePoints.Length;
